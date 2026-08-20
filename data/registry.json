@@ -1,0 +1,130 @@
+[
+  {
+    "id": "gh",
+    "name": "GitHub CLI",
+    "command": "gh",
+    "versionArgs": ["--version"],
+    "description": {
+      "en": "GitHub's official command-line interface for repositories, issues, pull requests, and releases.",
+      "zh": "GitHub 官方命令行工具，用于仓库、Issue、Pull Request 和 Release。"
+    },
+    "homepage": "https://cli.github.com/",
+    "license": "MIT",
+    "platforms": ["darwin", "linux", "win32"],
+    "capabilities": ["repositories", "issues", "pull requests", "releases"],
+    "installers": [
+      {
+        "id": "homebrew",
+        "manager": "brew",
+        "platforms": ["darwin", "linux"],
+        "command": "brew",
+        "args": ["install", "gh"],
+        "homepage": "https://brew.sh/"
+      },
+      {
+        "id": "winget",
+        "manager": "winget",
+        "platforms": ["win32"],
+        "command": "winget",
+        "args": ["install", "--id", "GitHub.cli", "--exact"],
+        "homepage": "https://github.com/microsoft/winget-cli"
+      }
+    ]
+  },
+  {
+    "id": "rg",
+    "name": "ripgrep",
+    "command": "rg",
+    "versionArgs": ["--version"],
+    "description": {
+      "en": "A fast recursive search tool for source trees and structured text.",
+      "zh": "快速递归搜索源码树和结构化文本的命令行工具。"
+    },
+    "homepage": "https://github.com/BurntSushi/ripgrep",
+    "license": "MIT",
+    "platforms": ["darwin", "linux", "win32"],
+    "capabilities": ["search", "source code", "text processing"],
+    "installers": [
+      {
+        "id": "homebrew",
+        "manager": "brew",
+        "platforms": ["darwin", "linux"],
+        "command": "brew",
+        "args": ["install", "ripgrep"],
+        "homepage": "https://brew.sh/"
+      },
+      {
+        "id": "winget",
+        "manager": "winget",
+        "platforms": ["win32"],
+        "command": "winget",
+        "args": ["install", "--id", "BurntSushi.ripgrep.MSVC", "--exact"],
+        "homepage": "https://github.com/microsoft/winget-cli"
+      }
+    ]
+  },
+  {
+    "id": "jq",
+    "name": "jq",
+    "command": "jq",
+    "versionArgs": ["--version"],
+    "description": {
+      "en": "A compact command-line JSON processor for inspecting and transforming data.",
+      "zh": "轻量的命令行 JSON 处理器，用于检查和转换数据。"
+    },
+    "homepage": "https://jqlang.github.io/jq/",
+    "license": "MIT",
+    "platforms": ["darwin", "linux", "win32"],
+    "capabilities": ["json", "data processing", "automation"],
+    "installers": [
+      {
+        "id": "homebrew",
+        "manager": "brew",
+        "platforms": ["darwin", "linux"],
+        "command": "brew",
+        "args": ["install", "jq"],
+        "homepage": "https://brew.sh/"
+      },
+      {
+        "id": "winget",
+        "manager": "winget",
+        "platforms": ["win32"],
+        "command": "winget",
+        "args": ["install", "--id", "jqlang.jq", "--exact"],
+        "homepage": "https://github.com/microsoft/winget-cli"
+      }
+    ]
+  },
+  {
+    "id": "ffmpeg",
+    "name": "FFmpeg",
+    "command": "ffmpeg",
+    "versionArgs": ["-version"],
+    "description": {
+      "en": "A command-line toolkit for recording, converting, and streaming audio and video.",
+      "zh": "用于录制、转换和流式处理音视频的命令行工具集。"
+    },
+    "homepage": "https://ffmpeg.org/",
+    "license": "LGPL-2.1+",
+    "platforms": ["darwin", "linux", "win32"],
+    "capabilities": ["audio", "video", "media processing"],
+    "installers": [
+      {
+        "id": "homebrew",
+        "manager": "brew",
+        "platforms": ["darwin", "linux"],
+        "command": "brew",
+        "args": ["install", "ffmpeg"],
+        "homepage": "https://brew.sh/"
+      },
+      {
+        "id": "winget",
+        "manager": "winget",
+        "platforms": ["win32"],
+        "command": "winget",
+        "args": ["install", "--id", "Gyan.FFmpeg.Shared", "--exact"],
+        "homepage": "https://github.com/microsoft/winget-cli"
+      }
+    ]
+  }
+]
