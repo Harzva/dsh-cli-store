@@ -7,7 +7,7 @@ It is intentionally not another DSH plugin marketplace. A DSH marketplace instal
 ## Install into DSH
 
 ```bash
-dsh plugin --profile web add https://github.com/Harzva/dsh-cli-store/releases/latest/download/dsh-cli-store-0.2.1.tgz
+dsh plugin --profile web add https://github.com/Harzva/dsh-cli-store/releases/latest/download/dsh-cli-store-0.3.0.tgz
 ```
 
 The plugin registers seven tools:
