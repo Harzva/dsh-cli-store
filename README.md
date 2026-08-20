@@ -36,6 +36,10 @@ dsh-cli-store plan install workbench
 
 The CLI accepts multi-word search queries and `--json` output for automation. A confirmed package-manager installation is followed by a version check; a package-manager success with no responding CLI is reported as `installed-unverified`. Manual official installers return instructions and leave execution to the user.
 
+## Curated catalog
+
+The registry currently contains 64 curated CLI entries. The catalog covers Alibaba Cloud, AWS, Azure, Kubernetes, Docker, Git, JavaScript/TypeScript, Python, databases, networking, media, document conversion, security, shell utilities, and terminal interfaces. The first expansion batch adds 59 Homebrew-backed entries for macOS and Linux; each record keeps its executable name, upstream homepage, license, capabilities, and explicit `brew install <formula>` plan.
+
 ## Internet discovery
 
 `discover` currently queries four public sources through bounded adapters:

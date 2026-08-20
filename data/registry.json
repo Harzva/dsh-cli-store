@@ -3,20 +3,35 @@
     "id": "workbench",
     "name": "Alibaba Cloud Workbench CLI",
     "command": "workbench",
-    "versionArgs": ["version"],
+    "versionArgs": [
+      "version"
+    ],
     "description": {
       "en": "Alibaba Cloud's official CLI for listing ECS instances and managing Workbench sessions to Linux instances.",
       "zh": "阿里云官方 Workbench 命令行工具，用于列出 ECS 实例并管理连接 Linux 实例的 Workbench 会话。"
     },
     "homepage": "https://help.aliyun.com/en/ecs/user-guide/install-and-configure-workbench-cli-credentials",
     "license": "Proprietary",
-    "platforms": ["darwin", "linux", "win32"],
-    "capabilities": ["Alibaba Cloud", "ECS", "remote sessions", "SSH", "cloud operations"],
+    "platforms": [
+      "darwin",
+      "linux",
+      "win32"
+    ],
+    "capabilities": [
+      "Alibaba Cloud",
+      "ECS",
+      "remote sessions",
+      "SSH",
+      "cloud operations"
+    ],
     "installers": [
       {
         "id": "official-script-unix",
         "manager": "manual",
-        "platforms": ["darwin", "linux"],
+        "platforms": [
+          "darwin",
+          "linux"
+        ],
         "url": "https://workbench-cli.oss-cn-hangzhou.aliyuncs.com/install.sh",
         "instructions": {
           "en": "Review the official script, then run: curl -fsSL https://workbench-cli.oss-cn-hangzhou.aliyuncs.com/install.sh | bash",
@@ -26,7 +41,9 @@
       {
         "id": "official-script-windows",
         "manager": "manual",
-        "platforms": ["win32"],
+        "platforms": [
+          "win32"
+        ],
         "url": "https://workbench-cli.oss-cn-hangzhou.aliyuncs.com/install.ps1",
         "instructions": {
           "en": "Review the official PowerShell script, then run: irm https://workbench-cli.oss-cn-hangzhou.aliyuncs.com/install.ps1 | iex",
@@ -39,30 +56,54 @@
     "id": "gh",
     "name": "GitHub CLI",
     "command": "gh",
-    "versionArgs": ["--version"],
+    "versionArgs": [
+      "--version"
+    ],
     "description": {
       "en": "GitHub's official command-line interface for repositories, issues, pull requests, and releases.",
       "zh": "GitHub 官方命令行工具，用于仓库、Issue、Pull Request 和 Release。"
     },
     "homepage": "https://cli.github.com/",
     "license": "MIT",
-    "platforms": ["darwin", "linux", "win32"],
-    "capabilities": ["repositories", "issues", "pull requests", "releases"],
+    "platforms": [
+      "darwin",
+      "linux",
+      "win32"
+    ],
+    "capabilities": [
+      "repositories",
+      "issues",
+      "pull requests",
+      "releases"
+    ],
     "installers": [
       {
         "id": "homebrew",
         "manager": "brew",
-        "platforms": ["darwin", "linux"],
+        "platforms": [
+          "darwin",
+          "linux"
+        ],
         "command": "brew",
-        "args": ["install", "gh"],
+        "args": [
+          "install",
+          "gh"
+        ],
         "homepage": "https://brew.sh/"
       },
       {
         "id": "winget",
         "manager": "winget",
-        "platforms": ["win32"],
+        "platforms": [
+          "win32"
+        ],
         "command": "winget",
-        "args": ["install", "--id", "GitHub.cli", "--exact"],
+        "args": [
+          "install",
+          "--id",
+          "GitHub.cli",
+          "--exact"
+        ],
         "homepage": "https://github.com/microsoft/winget-cli"
       }
     ]
@@ -71,30 +112,53 @@
     "id": "rg",
     "name": "ripgrep",
     "command": "rg",
-    "versionArgs": ["--version"],
+    "versionArgs": [
+      "--version"
+    ],
     "description": {
       "en": "A fast recursive search tool for source trees and structured text.",
       "zh": "快速递归搜索源码树和结构化文本的命令行工具。"
     },
     "homepage": "https://github.com/BurntSushi/ripgrep",
     "license": "MIT",
-    "platforms": ["darwin", "linux", "win32"],
-    "capabilities": ["search", "source code", "text processing"],
+    "platforms": [
+      "darwin",
+      "linux",
+      "win32"
+    ],
+    "capabilities": [
+      "search",
+      "source code",
+      "text processing"
+    ],
     "installers": [
       {
         "id": "homebrew",
         "manager": "brew",
-        "platforms": ["darwin", "linux"],
+        "platforms": [
+          "darwin",
+          "linux"
+        ],
         "command": "brew",
-        "args": ["install", "ripgrep"],
+        "args": [
+          "install",
+          "ripgrep"
+        ],
         "homepage": "https://brew.sh/"
       },
       {
         "id": "winget",
         "manager": "winget",
-        "platforms": ["win32"],
+        "platforms": [
+          "win32"
+        ],
         "command": "winget",
-        "args": ["install", "--id", "BurntSushi.ripgrep.MSVC", "--exact"],
+        "args": [
+          "install",
+          "--id",
+          "BurntSushi.ripgrep.MSVC",
+          "--exact"
+        ],
         "homepage": "https://github.com/microsoft/winget-cli"
       }
     ]
@@ -103,30 +167,53 @@
     "id": "jq",
     "name": "jq",
     "command": "jq",
-    "versionArgs": ["--version"],
+    "versionArgs": [
+      "--version"
+    ],
     "description": {
       "en": "A compact command-line JSON processor for inspecting and transforming data.",
       "zh": "轻量的命令行 JSON 处理器，用于检查和转换数据。"
     },
     "homepage": "https://jqlang.github.io/jq/",
     "license": "MIT",
-    "platforms": ["darwin", "linux", "win32"],
-    "capabilities": ["json", "data processing", "automation"],
+    "platforms": [
+      "darwin",
+      "linux",
+      "win32"
+    ],
+    "capabilities": [
+      "json",
+      "data processing",
+      "automation"
+    ],
     "installers": [
       {
         "id": "homebrew",
         "manager": "brew",
-        "platforms": ["darwin", "linux"],
+        "platforms": [
+          "darwin",
+          "linux"
+        ],
         "command": "brew",
-        "args": ["install", "jq"],
+        "args": [
+          "install",
+          "jq"
+        ],
         "homepage": "https://brew.sh/"
       },
       {
         "id": "winget",
         "manager": "winget",
-        "platforms": ["win32"],
+        "platforms": [
+          "win32"
+        ],
         "command": "winget",
-        "args": ["install", "--id", "jqlang.jq", "--exact"],
+        "args": [
+          "install",
+          "--id",
+          "jqlang.jq",
+          "--exact"
+        ],
         "homepage": "https://github.com/microsoft/winget-cli"
       }
     ]
@@ -135,31 +222,2359 @@
     "id": "ffmpeg",
     "name": "FFmpeg",
     "command": "ffmpeg",
-    "versionArgs": ["-version"],
+    "versionArgs": [
+      "-version"
+    ],
     "description": {
       "en": "A command-line toolkit for recording, converting, and streaming audio and video.",
       "zh": "用于录制、转换和流式处理音视频的命令行工具集。"
     },
     "homepage": "https://ffmpeg.org/",
     "license": "LGPL-2.1+",
-    "platforms": ["darwin", "linux", "win32"],
-    "capabilities": ["audio", "video", "media processing"],
+    "platforms": [
+      "darwin",
+      "linux",
+      "win32"
+    ],
+    "capabilities": [
+      "audio",
+      "video",
+      "media processing"
+    ],
     "installers": [
       {
         "id": "homebrew",
         "manager": "brew",
-        "platforms": ["darwin", "linux"],
+        "platforms": [
+          "darwin",
+          "linux"
+        ],
         "command": "brew",
-        "args": ["install", "ffmpeg"],
+        "args": [
+          "install",
+          "ffmpeg"
+        ],
         "homepage": "https://brew.sh/"
       },
       {
         "id": "winget",
         "manager": "winget",
-        "platforms": ["win32"],
+        "platforms": [
+          "win32"
+        ],
         "command": "winget",
-        "args": ["install", "--id", "Gyan.FFmpeg.Shared", "--exact"],
+        "args": [
+          "install",
+          "--id",
+          "Gyan.FFmpeg.Shared",
+          "--exact"
+        ],
         "homepage": "https://github.com/microsoft/winget-cli"
+      }
+    ]
+  },
+  {
+    "id": "aliyun",
+    "name": "aliyun-cli",
+    "command": "aliyun",
+    "versionArgs": [
+      "--version"
+    ],
+    "description": {
+      "en": "Universal Command-Line Interface for Alibaba Cloud",
+      "zh": "aliyun 命令行工具。"
+    },
+    "homepage": "https://github.com/aliyun/aliyun-cli",
+    "license": "Apache-2.0",
+    "platforms": [
+      "darwin",
+      "linux"
+    ],
+    "capabilities": [
+      "Alibaba Cloud",
+      "cloud operations",
+      "OpenAPI"
+    ],
+    "installers": [
+      {
+        "id": "homebrew",
+        "manager": "brew",
+        "platforms": [
+          "darwin",
+          "linux"
+        ],
+        "command": "brew",
+        "args": [
+          "install",
+          "aliyun-cli"
+        ],
+        "homepage": "https://formulae.brew.sh/formula/aliyun-cli"
+      }
+    ]
+  },
+  {
+    "id": "ansible",
+    "name": "ansible",
+    "command": "ansible",
+    "versionArgs": [
+      "--version"
+    ],
+    "description": {
+      "en": "Automate deployment, configuration, and upgrading",
+      "zh": "ansible 命令行工具。"
+    },
+    "homepage": "https://www.ansible.com/",
+    "license": "GPL-3.0-or-later",
+    "platforms": [
+      "darwin",
+      "linux"
+    ],
+    "capabilities": [
+      "automation",
+      "configuration management",
+      "deployment"
+    ],
+    "installers": [
+      {
+        "id": "homebrew",
+        "manager": "brew",
+        "platforms": [
+          "darwin",
+          "linux"
+        ],
+        "command": "brew",
+        "args": [
+          "install",
+          "ansible"
+        ],
+        "homepage": "https://formulae.brew.sh/formula/ansible"
+      }
+    ]
+  },
+  {
+    "id": "aria2c",
+    "name": "aria2",
+    "command": "aria2c",
+    "versionArgs": [
+      "--version"
+    ],
+    "description": {
+      "en": "Download with resuming and segmented downloading",
+      "zh": "aria2c 命令行工具。"
+    },
+    "homepage": "https://aria2.github.io/",
+    "license": "GPL-2.0-or-later",
+    "platforms": [
+      "darwin",
+      "linux"
+    ],
+    "capabilities": [
+      "downloads",
+      "HTTP",
+      "BitTorrent"
+    ],
+    "installers": [
+      {
+        "id": "homebrew",
+        "manager": "brew",
+        "platforms": [
+          "darwin",
+          "linux"
+        ],
+        "command": "brew",
+        "args": [
+          "install",
+          "aria2"
+        ],
+        "homepage": "https://formulae.brew.sh/formula/aria2"
+      }
+    ]
+  },
+  {
+    "id": "aws",
+    "name": "awscli",
+    "command": "aws",
+    "versionArgs": [
+      "--version"
+    ],
+    "description": {
+      "en": "Official Amazon AWS command-line interface",
+      "zh": "aws 命令行工具。"
+    },
+    "homepage": "https://aws.amazon.com/cli/",
+    "license": "Apache-2.0",
+    "platforms": [
+      "darwin",
+      "linux"
+    ],
+    "capabilities": [
+      "AWS",
+      "cloud operations",
+      "automation"
+    ],
+    "installers": [
+      {
+        "id": "homebrew",
+        "manager": "brew",
+        "platforms": [
+          "darwin",
+          "linux"
+        ],
+        "command": "brew",
+        "args": [
+          "install",
+          "awscli"
+        ],
+        "homepage": "https://formulae.brew.sh/formula/awscli"
+      }
+    ]
+  },
+  {
+    "id": "az",
+    "name": "azure-cli",
+    "command": "az",
+    "versionArgs": [
+      "--version"
+    ],
+    "description": {
+      "en": "Microsoft Azure CLI 2.0",
+      "zh": "az 命令行工具。"
+    },
+    "homepage": "https://docs.microsoft.com/cli/azure/overview",
+    "license": "MIT",
+    "platforms": [
+      "darwin",
+      "linux"
+    ],
+    "capabilities": [
+      "Microsoft Azure",
+      "cloud operations",
+      "automation"
+    ],
+    "installers": [
+      {
+        "id": "homebrew",
+        "manager": "brew",
+        "platforms": [
+          "darwin",
+          "linux"
+        ],
+        "command": "brew",
+        "args": [
+          "install",
+          "azure-cli"
+        ],
+        "homepage": "https://formulae.brew.sh/formula/azure-cli"
+      }
+    ]
+  },
+  {
+    "id": "bat",
+    "name": "bat",
+    "command": "bat",
+    "versionArgs": [
+      "--version"
+    ],
+    "description": {
+      "en": "Clone of cat(1) with syntax highlighting and Git integration",
+      "zh": "bat 命令行工具。"
+    },
+    "homepage": "https://github.com/sharkdp/bat",
+    "license": "Apache-2.0 OR MIT",
+    "platforms": [
+      "darwin",
+      "linux"
+    ],
+    "capabilities": [
+      "files",
+      "syntax highlighting",
+      "git"
+    ],
+    "installers": [
+      {
+        "id": "homebrew",
+        "manager": "brew",
+        "platforms": [
+          "darwin",
+          "linux"
+        ],
+        "command": "brew",
+        "args": [
+          "install",
+          "bat"
+        ],
+        "homepage": "https://formulae.brew.sh/formula/bat"
+      }
+    ]
+  },
+  {
+    "id": "btop",
+    "name": "btop",
+    "command": "btop",
+    "versionArgs": [
+      "--version"
+    ],
+    "description": {
+      "en": "Resource monitor. C++ version and continuation of bashtop and bpytop",
+      "zh": "btop 命令行工具。"
+    },
+    "homepage": "https://github.com/aristocratos/btop",
+    "license": "Apache-2.0",
+    "platforms": [
+      "darwin",
+      "linux"
+    ],
+    "capabilities": [
+      "system monitoring",
+      "processes",
+      "resources"
+    ],
+    "installers": [
+      {
+        "id": "homebrew",
+        "manager": "brew",
+        "platforms": [
+          "darwin",
+          "linux"
+        ],
+        "command": "brew",
+        "args": [
+          "install",
+          "btop"
+        ],
+        "homepage": "https://formulae.brew.sh/formula/btop"
+      }
+    ]
+  },
+  {
+    "id": "caddy",
+    "name": "caddy",
+    "command": "caddy",
+    "versionArgs": [
+      "version"
+    ],
+    "description": {
+      "en": "Powerful, enterprise-ready, open source web server with automatic HTTPS",
+      "zh": "caddy 命令行工具。"
+    },
+    "homepage": "https://caddyserver.com/",
+    "license": "Apache-2.0",
+    "platforms": [
+      "darwin",
+      "linux"
+    ],
+    "capabilities": [
+      "web server",
+      "HTTPS",
+      "reverse proxy"
+    ],
+    "installers": [
+      {
+        "id": "homebrew",
+        "manager": "brew",
+        "platforms": [
+          "darwin",
+          "linux"
+        ],
+        "command": "brew",
+        "args": [
+          "install",
+          "caddy"
+        ],
+        "homepage": "https://formulae.brew.sh/formula/caddy"
+      }
+    ]
+  },
+  {
+    "id": "chafa",
+    "name": "chafa",
+    "command": "chafa",
+    "versionArgs": [
+      "--version"
+    ],
+    "description": {
+      "en": "Versatile and fast Unicode/ASCII/ANSI graphics renderer",
+      "zh": "chafa 命令行工具。"
+    },
+    "homepage": "https://hpjansson.org/chafa/",
+    "license": "LGPL-3.0-or-later",
+    "platforms": [
+      "darwin",
+      "linux"
+    ],
+    "capabilities": [
+      "terminal graphics",
+      "images",
+      "ANSI"
+    ],
+    "installers": [
+      {
+        "id": "homebrew",
+        "manager": "brew",
+        "platforms": [
+          "darwin",
+          "linux"
+        ],
+        "command": "brew",
+        "args": [
+          "install",
+          "chafa"
+        ],
+        "homepage": "https://formulae.brew.sh/formula/chafa"
+      }
+    ]
+  },
+  {
+    "id": "cosign",
+    "name": "cosign",
+    "command": "cosign",
+    "versionArgs": [
+      "--version"
+    ],
+    "description": {
+      "en": "Container Signing",
+      "zh": "cosign 命令行工具。"
+    },
+    "homepage": "https://github.com/sigstore/cosign",
+    "license": "Apache-2.0",
+    "platforms": [
+      "darwin",
+      "linux"
+    ],
+    "capabilities": [
+      "containers",
+      "signing",
+      "supply chain security"
+    ],
+    "installers": [
+      {
+        "id": "homebrew",
+        "manager": "brew",
+        "platforms": [
+          "darwin",
+          "linux"
+        ],
+        "command": "brew",
+        "args": [
+          "install",
+          "cosign"
+        ],
+        "homepage": "https://formulae.brew.sh/formula/cosign"
+      }
+    ]
+  },
+  {
+    "id": "csvcut",
+    "name": "csvkit",
+    "command": "csvcut",
+    "versionArgs": [
+      "--version"
+    ],
+    "description": {
+      "en": "Suite of command-line tools for converting to and working with CSV",
+      "zh": "csvcut 命令行工具。"
+    },
+    "homepage": "https://csvkit.readthedocs.io/",
+    "license": "MIT",
+    "platforms": [
+      "darwin",
+      "linux"
+    ],
+    "capabilities": [
+      "CSV",
+      "data processing",
+      "SQL"
+    ],
+    "installers": [
+      {
+        "id": "homebrew",
+        "manager": "brew",
+        "platforms": [
+          "darwin",
+          "linux"
+        ],
+        "command": "brew",
+        "args": [
+          "install",
+          "csvkit"
+        ],
+        "homepage": "https://formulae.brew.sh/formula/csvkit"
+      }
+    ]
+  },
+  {
+    "id": "curl",
+    "name": "curl",
+    "command": "curl",
+    "versionArgs": [
+      "--version"
+    ],
+    "description": {
+      "en": "Get a file from an HTTP, HTTPS or FTP server",
+      "zh": "curl 命令行工具。"
+    },
+    "homepage": "https://curl.se",
+    "license": "curl",
+    "platforms": [
+      "darwin",
+      "linux"
+    ],
+    "capabilities": [
+      "HTTP",
+      "HTTPS",
+      "networking"
+    ],
+    "installers": [
+      {
+        "id": "homebrew",
+        "manager": "brew",
+        "platforms": [
+          "darwin",
+          "linux"
+        ],
+        "command": "brew",
+        "args": [
+          "install",
+          "curl"
+        ],
+        "homepage": "https://formulae.brew.sh/formula/curl"
+      }
+    ]
+  },
+  {
+    "id": "dasel",
+    "name": "dasel",
+    "command": "dasel",
+    "versionArgs": [
+      "--version"
+    ],
+    "description": {
+      "en": "JSON, YAML, TOML, XML, and CSV query and modification tool",
+      "zh": "dasel 命令行工具。"
+    },
+    "homepage": "https://daseldocs.tomwright.me",
+    "license": "MIT",
+    "platforms": [
+      "darwin",
+      "linux"
+    ],
+    "capabilities": [
+      "JSON",
+      "YAML",
+      "data processing"
+    ],
+    "installers": [
+      {
+        "id": "homebrew",
+        "manager": "brew",
+        "platforms": [
+          "darwin",
+          "linux"
+        ],
+        "command": "brew",
+        "args": [
+          "install",
+          "dasel"
+        ],
+        "homepage": "https://formulae.brew.sh/formula/dasel"
+      }
+    ]
+  },
+  {
+    "id": "deno",
+    "name": "deno",
+    "command": "deno",
+    "versionArgs": [
+      "--version"
+    ],
+    "description": {
+      "en": "Secure runtime for JavaScript and TypeScript",
+      "zh": "deno 命令行工具。"
+    },
+    "homepage": "https://deno.com/",
+    "license": "MIT",
+    "platforms": [
+      "darwin",
+      "linux"
+    ],
+    "capabilities": [
+      "JavaScript",
+      "TypeScript",
+      "runtime"
+    ],
+    "installers": [
+      {
+        "id": "homebrew",
+        "manager": "brew",
+        "platforms": [
+          "darwin",
+          "linux"
+        ],
+        "command": "brew",
+        "args": [
+          "install",
+          "deno"
+        ],
+        "homepage": "https://formulae.brew.sh/formula/deno"
+      }
+    ]
+  },
+  {
+    "id": "docker",
+    "name": "docker",
+    "command": "docker",
+    "versionArgs": [
+      "--version"
+    ],
+    "description": {
+      "en": "Pack, ship and run any application as a lightweight container",
+      "zh": "docker 命令行工具。"
+    },
+    "homepage": "https://www.docker.com/",
+    "license": "Apache-2.0",
+    "platforms": [
+      "darwin",
+      "linux"
+    ],
+    "capabilities": [
+      "containers",
+      "images",
+      "automation"
+    ],
+    "installers": [
+      {
+        "id": "homebrew",
+        "manager": "brew",
+        "platforms": [
+          "darwin",
+          "linux"
+        ],
+        "command": "brew",
+        "args": [
+          "install",
+          "docker"
+        ],
+        "homepage": "https://formulae.brew.sh/formula/docker"
+      }
+    ]
+  },
+  {
+    "id": "docker-compose",
+    "name": "docker-compose",
+    "command": "docker-compose",
+    "versionArgs": [
+      "version"
+    ],
+    "description": {
+      "en": "Isolated development environments using Docker",
+      "zh": "docker-compose 命令行工具。"
+    },
+    "homepage": "https://docs.docker.com/compose/",
+    "license": "Apache-2.0",
+    "platforms": [
+      "darwin",
+      "linux"
+    ],
+    "capabilities": [
+      "containers",
+      "orchestration",
+      "development"
+    ],
+    "installers": [
+      {
+        "id": "homebrew",
+        "manager": "brew",
+        "platforms": [
+          "darwin",
+          "linux"
+        ],
+        "command": "brew",
+        "args": [
+          "install",
+          "docker-compose"
+        ],
+        "homepage": "https://formulae.brew.sh/formula/docker-compose"
+      }
+    ]
+  },
+  {
+    "id": "doctl",
+    "name": "doctl",
+    "command": "doctl",
+    "versionArgs": [
+      "version"
+    ],
+    "description": {
+      "en": "Command-line tool for DigitalOcean",
+      "zh": "doctl 命令行工具。"
+    },
+    "homepage": "https://docs.digitalocean.com/reference/doctl/",
+    "license": "Apache-2.0",
+    "platforms": [
+      "darwin",
+      "linux"
+    ],
+    "capabilities": [
+      "DigitalOcean",
+      "cloud operations",
+      "automation"
+    ],
+    "installers": [
+      {
+        "id": "homebrew",
+        "manager": "brew",
+        "platforms": [
+          "darwin",
+          "linux"
+        ],
+        "command": "brew",
+        "args": [
+          "install",
+          "doctl"
+        ],
+        "homepage": "https://formulae.brew.sh/formula/doctl"
+      }
+    ]
+  },
+  {
+    "id": "duckdb",
+    "name": "duckdb",
+    "command": "duckdb",
+    "versionArgs": [
+      "--version"
+    ],
+    "description": {
+      "en": "Embeddable SQL OLAP Database Management System",
+      "zh": "duckdb 命令行工具。"
+    },
+    "homepage": "https://www.duckdb.org",
+    "license": "MIT",
+    "platforms": [
+      "darwin",
+      "linux"
+    ],
+    "capabilities": [
+      "SQL",
+      "analytics",
+      "data processing"
+    ],
+    "installers": [
+      {
+        "id": "homebrew",
+        "manager": "brew",
+        "platforms": [
+          "darwin",
+          "linux"
+        ],
+        "command": "brew",
+        "args": [
+          "install",
+          "duckdb"
+        ],
+        "homepage": "https://formulae.brew.sh/formula/duckdb"
+      }
+    ]
+  },
+  {
+    "id": "eza",
+    "name": "eza",
+    "command": "eza",
+    "versionArgs": [
+      "--version"
+    ],
+    "description": {
+      "en": "Modern, maintained replacement for ls",
+      "zh": "eza 命令行工具。"
+    },
+    "homepage": "https://eza.rocks",
+    "license": "EUPL-1.2",
+    "platforms": [
+      "darwin",
+      "linux"
+    ],
+    "capabilities": [
+      "files",
+      "directories",
+      "shell"
+    ],
+    "installers": [
+      {
+        "id": "homebrew",
+        "manager": "brew",
+        "platforms": [
+          "darwin",
+          "linux"
+        ],
+        "command": "brew",
+        "args": [
+          "install",
+          "eza"
+        ],
+        "homepage": "https://formulae.brew.sh/formula/eza"
+      }
+    ]
+  },
+  {
+    "id": "eksctl",
+    "name": "eksctl",
+    "command": "eksctl",
+    "versionArgs": [
+      "version"
+    ],
+    "description": {
+      "en": "Simple command-line tool for creating clusters on Amazon EKS",
+      "zh": "eksctl 命令行工具。"
+    },
+    "homepage": "https://eksctl.io",
+    "license": "Apache-2.0",
+    "platforms": [
+      "darwin",
+      "linux"
+    ],
+    "capabilities": [
+      "Amazon EKS",
+      "Kubernetes",
+      "cloud operations"
+    ],
+    "installers": [
+      {
+        "id": "homebrew",
+        "manager": "brew",
+        "platforms": [
+          "darwin",
+          "linux"
+        ],
+        "command": "brew",
+        "args": [
+          "install",
+          "eksctl"
+        ],
+        "homepage": "https://formulae.brew.sh/formula/eksctl"
+      }
+    ]
+  },
+  {
+    "id": "fd",
+    "name": "fd",
+    "command": "fd",
+    "versionArgs": [
+      "--version"
+    ],
+    "description": {
+      "en": "Simple, fast and user-friendly alternative to find",
+      "zh": "fd 命令行工具。"
+    },
+    "homepage": "https://github.com/sharkdp/fd",
+    "license": "Apache-2.0 OR MIT",
+    "platforms": [
+      "darwin",
+      "linux"
+    ],
+    "capabilities": [
+      "files",
+      "search",
+      "shell"
+    ],
+    "installers": [
+      {
+        "id": "homebrew",
+        "manager": "brew",
+        "platforms": [
+          "darwin",
+          "linux"
+        ],
+        "command": "brew",
+        "args": [
+          "install",
+          "fd"
+        ],
+        "homepage": "https://formulae.brew.sh/formula/fd"
+      }
+    ]
+  },
+  {
+    "id": "gfind",
+    "name": "findutils",
+    "command": "gfind",
+    "versionArgs": [
+      "--version"
+    ],
+    "description": {
+      "en": "Collection of GNU find, xargs, and locate",
+      "zh": "gfind 命令行工具。"
+    },
+    "homepage": "https://www.gnu.org/software/findutils/",
+    "license": "GPL-3.0-or-later",
+    "platforms": [
+      "darwin",
+      "linux"
+    ],
+    "capabilities": [
+      "files",
+      "search",
+      "GNU tools"
+    ],
+    "installers": [
+      {
+        "id": "homebrew",
+        "manager": "brew",
+        "platforms": [
+          "darwin",
+          "linux"
+        ],
+        "command": "brew",
+        "args": [
+          "install",
+          "findutils"
+        ],
+        "homepage": "https://formulae.brew.sh/formula/findutils"
+      }
+    ]
+  },
+  {
+    "id": "flyctl",
+    "name": "flyctl",
+    "command": "flyctl",
+    "versionArgs": [
+      "version"
+    ],
+    "description": {
+      "en": "Command-line tools for fly.io services",
+      "zh": "flyctl 命令行工具。"
+    },
+    "homepage": "https://fly.io",
+    "license": "Apache-2.0",
+    "platforms": [
+      "darwin",
+      "linux"
+    ],
+    "capabilities": [
+      "Fly.io",
+      "cloud deployment",
+      "operations"
+    ],
+    "installers": [
+      {
+        "id": "homebrew",
+        "manager": "brew",
+        "platforms": [
+          "darwin",
+          "linux"
+        ],
+        "command": "brew",
+        "args": [
+          "install",
+          "flyctl"
+        ],
+        "homepage": "https://formulae.brew.sh/formula/flyctl"
+      }
+    ]
+  },
+  {
+    "id": "fzf",
+    "name": "fzf",
+    "command": "fzf",
+    "versionArgs": [
+      "--version"
+    ],
+    "description": {
+      "en": "Command-line fuzzy finder written in Go",
+      "zh": "fzf 命令行工具。"
+    },
+    "homepage": "https://junegunn.github.io/fzf/",
+    "license": "MIT",
+    "platforms": [
+      "darwin",
+      "linux"
+    ],
+    "capabilities": [
+      "search",
+      "shell",
+      "interactive filtering"
+    ],
+    "installers": [
+      {
+        "id": "homebrew",
+        "manager": "brew",
+        "platforms": [
+          "darwin",
+          "linux"
+        ],
+        "command": "brew",
+        "args": [
+          "install",
+          "fzf"
+        ],
+        "homepage": "https://formulae.brew.sh/formula/fzf"
+      }
+    ]
+  },
+  {
+    "id": "gawk",
+    "name": "gawk",
+    "command": "gawk",
+    "versionArgs": [
+      "--version"
+    ],
+    "description": {
+      "en": "GNU awk utility",
+      "zh": "gawk 命令行工具。"
+    },
+    "homepage": "https://www.gnu.org/software/gawk/",
+    "license": "GPL-3.0-or-later",
+    "platforms": [
+      "darwin",
+      "linux"
+    ],
+    "capabilities": [
+      "text processing",
+      "data processing",
+      "shell"
+    ],
+    "installers": [
+      {
+        "id": "homebrew",
+        "manager": "brew",
+        "platforms": [
+          "darwin",
+          "linux"
+        ],
+        "command": "brew",
+        "args": [
+          "install",
+          "gawk"
+        ],
+        "homepage": "https://formulae.brew.sh/formula/gawk"
+      }
+    ]
+  },
+  {
+    "id": "git",
+    "name": "git",
+    "command": "git",
+    "versionArgs": [
+      "--version"
+    ],
+    "description": {
+      "en": "Distributed revision control system",
+      "zh": "git 命令行工具。"
+    },
+    "homepage": "https://git-scm.com",
+    "license": "GPL-2.0-only AND GPL-2.0-or-later AND LGPL-2.1-or-later AND BSD-3-Clause AND MIT",
+    "platforms": [
+      "darwin",
+      "linux"
+    ],
+    "capabilities": [
+      "version control",
+      "repositories",
+      "automation"
+    ],
+    "installers": [
+      {
+        "id": "homebrew",
+        "manager": "brew",
+        "platforms": [
+          "darwin",
+          "linux"
+        ],
+        "command": "brew",
+        "args": [
+          "install",
+          "git"
+        ],
+        "homepage": "https://formulae.brew.sh/formula/git"
+      }
+    ]
+  },
+  {
+    "id": "delta",
+    "name": "git-delta",
+    "command": "delta",
+    "versionArgs": [
+      "--version"
+    ],
+    "description": {
+      "en": "Syntax-highlighting pager for git and diff output",
+      "zh": "delta 命令行工具。"
+    },
+    "homepage": "https://dandavison.github.io/delta/",
+    "license": "MIT",
+    "platforms": [
+      "darwin",
+      "linux"
+    ],
+    "capabilities": [
+      "git",
+      "diff",
+      "syntax highlighting"
+    ],
+    "installers": [
+      {
+        "id": "homebrew",
+        "manager": "brew",
+        "platforms": [
+          "darwin",
+          "linux"
+        ],
+        "command": "brew",
+        "args": [
+          "install",
+          "git-delta"
+        ],
+        "homepage": "https://formulae.brew.sh/formula/git-delta"
+      }
+    ]
+  },
+  {
+    "id": "git-lfs",
+    "name": "git-lfs",
+    "command": "git-lfs",
+    "versionArgs": [
+      "version"
+    ],
+    "description": {
+      "en": "Git extension for versioning large files",
+      "zh": "git-lfs 命令行工具。"
+    },
+    "homepage": "https://git-lfs.com/",
+    "license": "MIT",
+    "platforms": [
+      "darwin",
+      "linux"
+    ],
+    "capabilities": [
+      "git",
+      "large files",
+      "version control"
+    ],
+    "installers": [
+      {
+        "id": "homebrew",
+        "manager": "brew",
+        "platforms": [
+          "darwin",
+          "linux"
+        ],
+        "command": "brew",
+        "args": [
+          "install",
+          "git-lfs"
+        ],
+        "homepage": "https://formulae.brew.sh/formula/git-lfs"
+      }
+    ]
+  },
+  {
+    "id": "glow",
+    "name": "glow",
+    "command": "glow",
+    "versionArgs": [
+      "--version"
+    ],
+    "description": {
+      "en": "Render markdown on the CLI",
+      "zh": "glow 命令行工具。"
+    },
+    "homepage": "https://github.com/charmbracelet/glow",
+    "license": "MIT",
+    "platforms": [
+      "darwin",
+      "linux"
+    ],
+    "capabilities": [
+      "Markdown",
+      "terminal rendering",
+      "documentation"
+    ],
+    "installers": [
+      {
+        "id": "homebrew",
+        "manager": "brew",
+        "platforms": [
+          "darwin",
+          "linux"
+        ],
+        "command": "brew",
+        "args": [
+          "install",
+          "glow"
+        ],
+        "homepage": "https://formulae.brew.sh/formula/glow"
+      }
+    ]
+  },
+  {
+    "id": "gsed",
+    "name": "gnu-sed",
+    "command": "gsed",
+    "versionArgs": [
+      "--version"
+    ],
+    "description": {
+      "en": "GNU implementation of the famous stream editor",
+      "zh": "gsed 命令行工具。"
+    },
+    "homepage": "https://www.gnu.org/software/sed/",
+    "license": "GPL-3.0-or-later",
+    "platforms": [
+      "darwin",
+      "linux"
+    ],
+    "capabilities": [
+      "text processing",
+      "shell",
+      "GNU tools"
+    ],
+    "installers": [
+      {
+        "id": "homebrew",
+        "manager": "brew",
+        "platforms": [
+          "darwin",
+          "linux"
+        ],
+        "command": "brew",
+        "args": [
+          "install",
+          "gnu-sed"
+        ],
+        "homepage": "https://formulae.brew.sh/formula/gnu-sed"
+      }
+    ]
+  },
+  {
+    "id": "gpg",
+    "name": "gnupg",
+    "command": "gpg",
+    "versionArgs": [
+      "--version"
+    ],
+    "description": {
+      "en": "GNU Privacy Guard (OpenPGP)",
+      "zh": "gpg 命令行工具。"
+    },
+    "homepage": "https://gnupg.org/",
+    "license": "GPL-3.0-or-later",
+    "platforms": [
+      "darwin",
+      "linux"
+    ],
+    "capabilities": [
+      "encryption",
+      "OpenPGP",
+      "signing"
+    ],
+    "installers": [
+      {
+        "id": "homebrew",
+        "manager": "brew",
+        "platforms": [
+          "darwin",
+          "linux"
+        ],
+        "command": "brew",
+        "args": [
+          "install",
+          "gnupg"
+        ],
+        "homepage": "https://formulae.brew.sh/formula/gnupg"
+      }
+    ]
+  },
+  {
+    "id": "goreleaser",
+    "name": "goreleaser",
+    "command": "goreleaser",
+    "versionArgs": [
+      "--version"
+    ],
+    "description": {
+      "en": "Deliver Go binaries as fast and easily as possible",
+      "zh": "goreleaser 命令行工具。"
+    },
+    "homepage": "https://goreleaser.com/",
+    "license": "MIT",
+    "platforms": [
+      "darwin",
+      "linux"
+    ],
+    "capabilities": [
+      "Go",
+      "releases",
+      "build automation"
+    ],
+    "installers": [
+      {
+        "id": "homebrew",
+        "manager": "brew",
+        "platforms": [
+          "darwin",
+          "linux"
+        ],
+        "command": "brew",
+        "args": [
+          "install",
+          "goreleaser"
+        ],
+        "homepage": "https://formulae.brew.sh/formula/goreleaser"
+      }
+    ]
+  },
+  {
+    "id": "grype",
+    "name": "grype",
+    "command": "grype",
+    "versionArgs": [
+      "--version"
+    ],
+    "description": {
+      "en": "Vulnerability scanner for container images and filesystems",
+      "zh": "grype 命令行工具。"
+    },
+    "homepage": "https://github.com/anchore/grype",
+    "license": "Apache-2.0",
+    "platforms": [
+      "darwin",
+      "linux"
+    ],
+    "capabilities": [
+      "security",
+      "vulnerability scanning",
+      "containers"
+    ],
+    "installers": [
+      {
+        "id": "homebrew",
+        "manager": "brew",
+        "platforms": [
+          "darwin",
+          "linux"
+        ],
+        "command": "brew",
+        "args": [
+          "install",
+          "grype"
+        ],
+        "homepage": "https://formulae.brew.sh/formula/grype"
+      }
+    ]
+  },
+  {
+    "id": "hadolint",
+    "name": "hadolint",
+    "command": "hadolint",
+    "versionArgs": [
+      "--version"
+    ],
+    "description": {
+      "en": "Smarter Dockerfile linter to validate best practices",
+      "zh": "hadolint 命令行工具。"
+    },
+    "homepage": "https://github.com/hadolint/hadolint",
+    "license": "GPL-3.0-only",
+    "platforms": [
+      "darwin",
+      "linux"
+    ],
+    "capabilities": [
+      "Dockerfile",
+      "linting",
+      "containers"
+    ],
+    "installers": [
+      {
+        "id": "homebrew",
+        "manager": "brew",
+        "platforms": [
+          "darwin",
+          "linux"
+        ],
+        "command": "brew",
+        "args": [
+          "install",
+          "hadolint"
+        ],
+        "homepage": "https://formulae.brew.sh/formula/hadolint"
+      }
+    ]
+  },
+  {
+    "id": "helm",
+    "name": "helm",
+    "command": "helm",
+    "versionArgs": [
+      "version",
+      "--short"
+    ],
+    "description": {
+      "en": "Kubernetes package manager",
+      "zh": "helm 命令行工具。"
+    },
+    "homepage": "https://helm.sh/",
+    "license": "Apache-2.0",
+    "platforms": [
+      "darwin",
+      "linux"
+    ],
+    "capabilities": [
+      "Kubernetes",
+      "packages",
+      "deployment"
+    ],
+    "installers": [
+      {
+        "id": "homebrew",
+        "manager": "brew",
+        "platforms": [
+          "darwin",
+          "linux"
+        ],
+        "command": "brew",
+        "args": [
+          "install",
+          "helm"
+        ],
+        "homepage": "https://formulae.brew.sh/formula/helm"
+      }
+    ]
+  },
+  {
+    "id": "helmfile",
+    "name": "helmfile",
+    "command": "helmfile",
+    "versionArgs": [
+      "version"
+    ],
+    "description": {
+      "en": "Deploy Kubernetes Helm Charts",
+      "zh": "helmfile 命令行工具。"
+    },
+    "homepage": "https://github.com/helmfile/helmfile",
+    "license": "MIT",
+    "platforms": [
+      "darwin",
+      "linux"
+    ],
+    "capabilities": [
+      "Kubernetes",
+      "Helm",
+      "deployment"
+    ],
+    "installers": [
+      {
+        "id": "homebrew",
+        "manager": "brew",
+        "platforms": [
+          "darwin",
+          "linux"
+        ],
+        "command": "brew",
+        "args": [
+          "install",
+          "helmfile"
+        ],
+        "homepage": "https://formulae.brew.sh/formula/helmfile"
+      }
+    ]
+  },
+  {
+    "id": "hugo",
+    "name": "hugo",
+    "command": "hugo",
+    "versionArgs": [
+      "version"
+    ],
+    "description": {
+      "en": "Configurable static site generator",
+      "zh": "hugo 命令行工具。"
+    },
+    "homepage": "https://gohugo.io/",
+    "license": "Apache-2.0",
+    "platforms": [
+      "darwin",
+      "linux"
+    ],
+    "capabilities": [
+      "static sites",
+      "Markdown",
+      "documentation"
+    ],
+    "installers": [
+      {
+        "id": "homebrew",
+        "manager": "brew",
+        "platforms": [
+          "darwin",
+          "linux"
+        ],
+        "command": "brew",
+        "args": [
+          "install",
+          "hugo"
+        ],
+        "homepage": "https://formulae.brew.sh/formula/hugo"
+      }
+    ]
+  },
+  {
+    "id": "http",
+    "name": "httpie",
+    "command": "http",
+    "versionArgs": [
+      "--version"
+    ],
+    "description": {
+      "en": "User-friendly cURL replacement (command-line HTTP client)",
+      "zh": "http 命令行工具。"
+    },
+    "homepage": "https://httpie.io/",
+    "license": "BSD-3-Clause",
+    "platforms": [
+      "darwin",
+      "linux"
+    ],
+    "capabilities": [
+      "HTTP",
+      "API testing",
+      "networking"
+    ],
+    "installers": [
+      {
+        "id": "homebrew",
+        "manager": "brew",
+        "platforms": [
+          "darwin",
+          "linux"
+        ],
+        "command": "brew",
+        "args": [
+          "install",
+          "httpie"
+        ],
+        "homepage": "https://formulae.brew.sh/formula/httpie"
+      }
+    ]
+  },
+  {
+    "id": "htop",
+    "name": "htop",
+    "command": "htop",
+    "versionArgs": [
+      "--version"
+    ],
+    "description": {
+      "en": "Improved top (interactive process viewer)",
+      "zh": "htop 命令行工具。"
+    },
+    "homepage": "https://htop.dev/",
+    "license": "GPL-2.0-or-later",
+    "platforms": [
+      "darwin",
+      "linux"
+    ],
+    "capabilities": [
+      "system monitoring",
+      "processes",
+      "resources"
+    ],
+    "installers": [
+      {
+        "id": "homebrew",
+        "manager": "brew",
+        "platforms": [
+          "darwin",
+          "linux"
+        ],
+        "command": "brew",
+        "args": [
+          "install",
+          "htop"
+        ],
+        "homepage": "https://formulae.brew.sh/formula/htop"
+      }
+    ]
+  },
+  {
+    "id": "magick",
+    "name": "imagemagick",
+    "command": "magick",
+    "versionArgs": [
+      "--version"
+    ],
+    "description": {
+      "en": "Tools and libraries to manipulate images in select formats",
+      "zh": "magick 命令行工具。"
+    },
+    "homepage": "https://imagemagick.org",
+    "license": "ImageMagick",
+    "platforms": [
+      "darwin",
+      "linux"
+    ],
+    "capabilities": [
+      "images",
+      "conversion",
+      "media processing"
+    ],
+    "installers": [
+      {
+        "id": "homebrew",
+        "manager": "brew",
+        "platforms": [
+          "darwin",
+          "linux"
+        ],
+        "command": "brew",
+        "args": [
+          "install",
+          "imagemagick"
+        ],
+        "homepage": "https://formulae.brew.sh/formula/imagemagick"
+      }
+    ]
+  },
+  {
+    "id": "iperf3",
+    "name": "iperf3",
+    "command": "iperf3",
+    "versionArgs": [
+      "--version"
+    ],
+    "description": {
+      "en": "Update of iperf: measures TCP, UDP, and SCTP bandwidth",
+      "zh": "iperf3 命令行工具。"
+    },
+    "homepage": "https://github.com/esnet/iperf",
+    "license": "BSD-3-Clause",
+    "platforms": [
+      "darwin",
+      "linux"
+    ],
+    "capabilities": [
+      "networking",
+      "bandwidth",
+      "diagnostics"
+    ],
+    "installers": [
+      {
+        "id": "homebrew",
+        "manager": "brew",
+        "platforms": [
+          "darwin",
+          "linux"
+        ],
+        "command": "brew",
+        "args": [
+          "install",
+          "iperf3"
+        ],
+        "homepage": "https://formulae.brew.sh/formula/iperf3"
+      }
+    ]
+  },
+  {
+    "id": "k9s",
+    "name": "k9s",
+    "command": "k9s",
+    "versionArgs": [
+      "version",
+      "--short"
+    ],
+    "description": {
+      "en": "Kubernetes CLI To Manage Your Clusters In Style!",
+      "zh": "k9s 命令行工具。"
+    },
+    "homepage": "https://k9scli.io/",
+    "license": "Apache-2.0",
+    "platforms": [
+      "darwin",
+      "linux"
+    ],
+    "capabilities": [
+      "Kubernetes",
+      "clusters",
+      "operations"
+    ],
+    "installers": [
+      {
+        "id": "homebrew",
+        "manager": "brew",
+        "platforms": [
+          "darwin",
+          "linux"
+        ],
+        "command": "brew",
+        "args": [
+          "install",
+          "k9s"
+        ],
+        "homepage": "https://formulae.brew.sh/formula/k9s"
+      }
+    ]
+  },
+  {
+    "id": "kind",
+    "name": "kind",
+    "command": "kind",
+    "versionArgs": [
+      "version"
+    ],
+    "description": {
+      "en": "Run local Kubernetes cluster in Docker",
+      "zh": "kind 命令行工具。"
+    },
+    "homepage": "https://kind.sigs.k8s.io/",
+    "license": "Apache-2.0",
+    "platforms": [
+      "darwin",
+      "linux"
+    ],
+    "capabilities": [
+      "Kubernetes",
+      "containers",
+      "development"
+    ],
+    "installers": [
+      {
+        "id": "homebrew",
+        "manager": "brew",
+        "platforms": [
+          "darwin",
+          "linux"
+        ],
+        "command": "brew",
+        "args": [
+          "install",
+          "kind"
+        ],
+        "homepage": "https://formulae.brew.sh/formula/kind"
+      }
+    ]
+  },
+  {
+    "id": "kotlin",
+    "name": "kotlin",
+    "command": "kotlin",
+    "versionArgs": [
+      "-version"
+    ],
+    "description": {
+      "en": "Statically typed programming language for the JVM",
+      "zh": "kotlin 命令行工具。"
+    },
+    "homepage": "https://kotlinlang.org/",
+    "license": "Apache-2.0",
+    "platforms": [
+      "darwin",
+      "linux"
+    ],
+    "capabilities": [
+      "Kotlin",
+      "JVM",
+      "development"
+    ],
+    "installers": [
+      {
+        "id": "homebrew",
+        "manager": "brew",
+        "platforms": [
+          "darwin",
+          "linux"
+        ],
+        "command": "brew",
+        "args": [
+          "install",
+          "kotlin"
+        ],
+        "homepage": "https://formulae.brew.sh/formula/kotlin"
+      }
+    ]
+  },
+  {
+    "id": "kubectl",
+    "name": "kubernetes-cli",
+    "command": "kubectl",
+    "versionArgs": [
+      "version",
+      "--client"
+    ],
+    "description": {
+      "en": "Kubernetes command-line interface",
+      "zh": "kubectl 命令行工具。"
+    },
+    "homepage": "https://kubernetes.io/docs/reference/kubectl/",
+    "license": "Apache-2.0",
+    "platforms": [
+      "darwin",
+      "linux"
+    ],
+    "capabilities": [
+      "Kubernetes",
+      "clusters",
+      "operations"
+    ],
+    "installers": [
+      {
+        "id": "homebrew",
+        "manager": "brew",
+        "platforms": [
+          "darwin",
+          "linux"
+        ],
+        "command": "brew",
+        "args": [
+          "install",
+          "kubernetes-cli"
+        ],
+        "homepage": "https://formulae.brew.sh/formula/kubernetes-cli"
+      }
+    ]
+  },
+  {
+    "id": "lazydocker",
+    "name": "lazydocker",
+    "command": "lazydocker",
+    "versionArgs": [
+      "--version"
+    ],
+    "description": {
+      "en": "Lazier way to manage everything docker",
+      "zh": "lazydocker 命令行工具。"
+    },
+    "homepage": "https://github.com/jesseduffield/lazydocker",
+    "license": "MIT",
+    "platforms": [
+      "darwin",
+      "linux"
+    ],
+    "capabilities": [
+      "Docker",
+      "containers",
+      "terminal UI"
+    ],
+    "installers": [
+      {
+        "id": "homebrew",
+        "manager": "brew",
+        "platforms": [
+          "darwin",
+          "linux"
+        ],
+        "command": "brew",
+        "args": [
+          "install",
+          "lazydocker"
+        ],
+        "homepage": "https://formulae.brew.sh/formula/lazydocker"
+      }
+    ]
+  },
+  {
+    "id": "lazygit",
+    "name": "lazygit",
+    "command": "lazygit",
+    "versionArgs": [
+      "--version"
+    ],
+    "description": {
+      "en": "Simple terminal UI for git commands",
+      "zh": "lazygit 命令行工具。"
+    },
+    "homepage": "https://github.com/jesseduffield/lazygit/",
+    "license": "MIT",
+    "platforms": [
+      "darwin",
+      "linux"
+    ],
+    "capabilities": [
+      "git",
+      "repositories",
+      "terminal UI"
+    ],
+    "installers": [
+      {
+        "id": "homebrew",
+        "manager": "brew",
+        "platforms": [
+          "darwin",
+          "linux"
+        ],
+        "command": "brew",
+        "args": [
+          "install",
+          "lazygit"
+        ],
+        "homepage": "https://formulae.brew.sh/formula/lazygit"
+      }
+    ]
+  },
+  {
+    "id": "mlr",
+    "name": "miller",
+    "command": "mlr",
+    "versionArgs": [
+      "--version"
+    ],
+    "description": {
+      "en": "Like sed, awk, cut, join & sort for name-indexed data such as CSV",
+      "zh": "mlr 命令行工具。"
+    },
+    "homepage": "https://github.com/johnkerl/miller",
+    "license": "BSD-2-Clause",
+    "platforms": [
+      "darwin",
+      "linux"
+    ],
+    "capabilities": [
+      "CSV",
+      "data processing",
+      "text processing"
+    ],
+    "installers": [
+      {
+        "id": "homebrew",
+        "manager": "brew",
+        "platforms": [
+          "darwin",
+          "linux"
+        ],
+        "command": "brew",
+        "args": [
+          "install",
+          "miller"
+        ],
+        "homepage": "https://formulae.brew.sh/formula/miller"
+      }
+    ]
+  },
+  {
+    "id": "minikube",
+    "name": "minikube",
+    "command": "minikube",
+    "versionArgs": [
+      "version",
+      "--short"
+    ],
+    "description": {
+      "en": "Run a Kubernetes cluster locally",
+      "zh": "minikube 命令行工具。"
+    },
+    "homepage": "https://minikube.sigs.k8s.io/",
+    "license": "Apache-2.0",
+    "platforms": [
+      "darwin",
+      "linux"
+    ],
+    "capabilities": [
+      "Kubernetes",
+      "clusters",
+      "development"
+    ],
+    "installers": [
+      {
+        "id": "homebrew",
+        "manager": "brew",
+        "platforms": [
+          "darwin",
+          "linux"
+        ],
+        "command": "brew",
+        "args": [
+          "install",
+          "minikube"
+        ],
+        "homepage": "https://formulae.brew.sh/formula/minikube"
+      }
+    ]
+  },
+  {
+    "id": "mtr",
+    "name": "mtr",
+    "command": "mtr",
+    "versionArgs": [
+      "--version"
+    ],
+    "description": {
+      "en": "'traceroute' and 'ping' in a single tool",
+      "zh": "mtr 命令行工具。"
+    },
+    "homepage": "https://www.bitwizard.nl/mtr/",
+    "license": "GPL-2.0-only AND BSD-3-Clause AND LGPL-2.0-only",
+    "platforms": [
+      "darwin",
+      "linux"
+    ],
+    "capabilities": [
+      "networking",
+      "diagnostics",
+      "routing"
+    ],
+    "installers": [
+      {
+        "id": "homebrew",
+        "manager": "brew",
+        "platforms": [
+          "darwin",
+          "linux"
+        ],
+        "command": "brew",
+        "args": [
+          "install",
+          "mtr"
+        ],
+        "homepage": "https://formulae.brew.sh/formula/mtr"
+      }
+    ]
+  },
+  {
+    "id": "nvim",
+    "name": "neovim",
+    "command": "nvim",
+    "versionArgs": [
+      "--version"
+    ],
+    "description": {
+      "en": "Ambitious Vim-fork focused on extensibility and agility",
+      "zh": "nvim 命令行工具。"
+    },
+    "homepage": "https://neovim.io/",
+    "license": "Apache-2.0",
+    "platforms": [
+      "darwin",
+      "linux"
+    ],
+    "capabilities": [
+      "editing",
+      "development",
+      "terminal UI"
+    ],
+    "installers": [
+      {
+        "id": "homebrew",
+        "manager": "brew",
+        "platforms": [
+          "darwin",
+          "linux"
+        ],
+        "command": "brew",
+        "args": [
+          "install",
+          "neovim"
+        ],
+        "homepage": "https://formulae.brew.sh/formula/neovim"
+      }
+    ]
+  },
+  {
+    "id": "nmap",
+    "name": "nmap",
+    "command": "nmap",
+    "versionArgs": [
+      "--version"
+    ],
+    "description": {
+      "en": "Port scanning utility for large networks",
+      "zh": "nmap 命令行工具。"
+    },
+    "homepage": "https://nmap.org/",
+    "license": "LicenseRef-Homebrew-cannot-represent",
+    "platforms": [
+      "darwin",
+      "linux"
+    ],
+    "capabilities": [
+      "networking",
+      "security",
+      "diagnostics"
+    ],
+    "installers": [
+      {
+        "id": "homebrew",
+        "manager": "brew",
+        "platforms": [
+          "darwin",
+          "linux"
+        ],
+        "command": "brew",
+        "args": [
+          "install",
+          "nmap"
+        ],
+        "homepage": "https://formulae.brew.sh/formula/nmap"
+      }
+    ]
+  },
+  {
+    "id": "node",
+    "name": "node",
+    "command": "node",
+    "versionArgs": [
+      "--version"
+    ],
+    "description": {
+      "en": "Open-source, cross-platform JavaScript runtime environment",
+      "zh": "node 命令行工具。"
+    },
+    "homepage": "https://nodejs.org/",
+    "license": "MIT",
+    "platforms": [
+      "darwin",
+      "linux"
+    ],
+    "capabilities": [
+      "JavaScript",
+      "Node.js",
+      "runtime"
+    ],
+    "installers": [
+      {
+        "id": "homebrew",
+        "manager": "brew",
+        "platforms": [
+          "darwin",
+          "linux"
+        ],
+        "command": "brew",
+        "args": [
+          "install",
+          "node"
+        ],
+        "homepage": "https://formulae.brew.sh/formula/node"
+      }
+    ]
+  },
+  {
+    "id": "tofu",
+    "name": "opentofu",
+    "command": "tofu",
+    "versionArgs": [
+      "version"
+    ],
+    "description": {
+      "en": "Drop-in replacement for Terraform. Infrastructure as Code Tool",
+      "zh": "tofu 命令行工具。"
+    },
+    "homepage": "https://opentofu.org/",
+    "license": "MPL-2.0",
+    "platforms": [
+      "darwin",
+      "linux"
+    ],
+    "capabilities": [
+      "infrastructure as code",
+      "cloud",
+      "deployment"
+    ],
+    "installers": [
+      {
+        "id": "homebrew",
+        "manager": "brew",
+        "platforms": [
+          "darwin",
+          "linux"
+        ],
+        "command": "brew",
+        "args": [
+          "install",
+          "opentofu"
+        ],
+        "homepage": "https://formulae.brew.sh/formula/opentofu"
+      }
+    ]
+  },
+  {
+    "id": "pandoc",
+    "name": "pandoc",
+    "command": "pandoc",
+    "versionArgs": [
+      "--version"
+    ],
+    "description": {
+      "en": "Swiss-army knife of markup format conversion",
+      "zh": "pandoc 命令行工具。"
+    },
+    "homepage": "https://pandoc.org/",
+    "license": "GPL-2.0-or-later",
+    "platforms": [
+      "darwin",
+      "linux"
+    ],
+    "capabilities": [
+      "documents",
+      "Markdown",
+      "conversion"
+    ],
+    "installers": [
+      {
+        "id": "homebrew",
+        "manager": "brew",
+        "platforms": [
+          "darwin",
+          "linux"
+        ],
+        "command": "brew",
+        "args": [
+          "install",
+          "pandoc"
+        ],
+        "homepage": "https://formulae.brew.sh/formula/pandoc"
+      }
+    ]
+  },
+  {
+    "id": "pass",
+    "name": "pass",
+    "command": "pass",
+    "versionArgs": [
+      "version"
+    ],
+    "description": {
+      "en": "Password manager",
+      "zh": "pass 命令行工具。"
+    },
+    "homepage": "https://www.passwordstore.org/",
+    "license": "GPL-2.0-or-later",
+    "platforms": [
+      "darwin",
+      "linux"
+    ],
+    "capabilities": [
+      "passwords",
+      "secrets",
+      "encryption"
+    ],
+    "installers": [
+      {
+        "id": "homebrew",
+        "manager": "brew",
+        "platforms": [
+          "darwin",
+          "linux"
+        ],
+        "command": "brew",
+        "args": [
+          "install",
+          "pass"
+        ],
+        "homepage": "https://formulae.brew.sh/formula/pass"
+      }
+    ]
+  },
+  {
+    "id": "peco",
+    "name": "peco",
+    "command": "peco",
+    "versionArgs": [
+      "--version"
+    ],
+    "description": {
+      "en": "Simplistic interactive filtering tool",
+      "zh": "peco 命令行工具。"
+    },
+    "homepage": "https://github.com/peco/peco",
+    "license": "MIT",
+    "platforms": [
+      "darwin",
+      "linux"
+    ],
+    "capabilities": [
+      "search",
+      "shell",
+      "interactive filtering"
+    ],
+    "installers": [
+      {
+        "id": "homebrew",
+        "manager": "brew",
+        "platforms": [
+          "darwin",
+          "linux"
+        ],
+        "command": "brew",
+        "args": [
+          "install",
+          "peco"
+        ],
+        "homepage": "https://formulae.brew.sh/formula/peco"
+      }
+    ]
+  },
+  {
+    "id": "pgcli",
+    "name": "pgcli",
+    "command": "pgcli",
+    "versionArgs": [
+      "--version"
+    ],
+    "description": {
+      "en": "CLI for Postgres with auto-completion and syntax highlighting",
+      "zh": "pgcli 命令行工具。"
+    },
+    "homepage": "https://pgcli.com/",
+    "license": "BSD-3-Clause",
+    "platforms": [
+      "darwin",
+      "linux"
+    ],
+    "capabilities": [
+      "PostgreSQL",
+      "SQL",
+      "database"
+    ],
+    "installers": [
+      {
+        "id": "homebrew",
+        "manager": "brew",
+        "platforms": [
+          "darwin",
+          "linux"
+        ],
+        "command": "brew",
+        "args": [
+          "install",
+          "pgcli"
+        ],
+        "homepage": "https://formulae.brew.sh/formula/pgcli"
+      }
+    ]
+  },
+  {
+    "id": "pipx",
+    "name": "pipx",
+    "command": "pipx",
+    "versionArgs": [
+      "--version"
+    ],
+    "description": {
+      "en": "Execute binaries from Python packages in isolated environments",
+      "zh": "pipx 命令行工具。"
+    },
+    "homepage": "https://pipx.pypa.io",
+    "license": "MIT",
+    "platforms": [
+      "darwin",
+      "linux"
+    ],
+    "capabilities": [
+      "Python",
+      "packages",
+      "isolated environments"
+    ],
+    "installers": [
+      {
+        "id": "homebrew",
+        "manager": "brew",
+        "platforms": [
+          "darwin",
+          "linux"
+        ],
+        "command": "brew",
+        "args": [
+          "install",
+          "pipx"
+        ],
+        "homepage": "https://formulae.brew.sh/formula/pipx"
       }
     ]
   }

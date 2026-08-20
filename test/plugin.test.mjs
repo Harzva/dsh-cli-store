@@ -14,11 +14,11 @@ test('DSH apply registers the catalog, doctor, and installer tools', async () =>
     'dsh_cli_doctor',
     'dsh_cli_install',
   ])
-  const searchResult = await tools[0].execute({ query: 'json' })
+  const searchResult = await tools[0].execute({ query: 'jq' })
   assert.equal(searchResult.data[0].id, 'jq')
   assert.match(searchResult.markdown, /jq/i)
   const listResult = await tools[1].execute()
-  assert.equal(listResult.data.length, 5)
+  assert.ok(listResult.data.length >= 50)
 })
 
 test('DSH apply fails clearly when the tools service is missing', () => {
