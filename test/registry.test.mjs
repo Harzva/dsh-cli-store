@@ -4,9 +4,11 @@ import { getEntry, loadRegistry, searchRegistry, validateEntry } from '../lib/re
 
 test('registry has unique entries with platform installers', async () => {
   const entries = await loadRegistry()
-  assert.equal(entries.length, 4)
+  assert.equal(entries.length, 5)
   assert.equal(new Set(entries.map((entry) => entry.id)).size, entries.length)
   for (const entry of entries) assert.ok(entry.installers.length > 0)
+  const workbench = entries.find((entry) => entry.id === 'workbench')
+  assert.equal(workbench.installers[0].manager, 'manual')
 })
 
 test('search ranks exact CLI ids first', async () => {
@@ -18,6 +20,13 @@ test('search matches capabilities and filters unsupported platforms', async () =
   const results = await searchRegistry('json', { platform: 'darwin' })
   assert.deepEqual(results.map((entry) => entry.id), ['jq'])
   assert.deepEqual(await searchRegistry('', { platform: 'freebsd' }), [])
+})
+
+test('manual installers are documented but never treated as shell commands', async () => {
+  const entry = await getEntry('workbench')
+  validateEntry(entry)
+  assert.equal(entry.installers[0].manager, 'manual')
+  assert.match(entry.installers[0].url, /^https:\/\//)
 })
 
 test('unknown CLI produces a useful error', async () => {

@@ -1,5 +1,41 @@
 [
   {
+    "id": "workbench",
+    "name": "Alibaba Cloud Workbench CLI",
+    "command": "workbench",
+    "versionArgs": ["version"],
+    "description": {
+      "en": "Alibaba Cloud's official CLI for listing ECS instances and managing Workbench sessions to Linux instances.",
+      "zh": "阿里云官方 Workbench 命令行工具，用于列出 ECS 实例并管理连接 Linux 实例的 Workbench 会话。"
+    },
+    "homepage": "https://help.aliyun.com/en/ecs/user-guide/install-and-configure-workbench-cli-credentials",
+    "license": "Proprietary",
+    "platforms": ["darwin", "linux", "win32"],
+    "capabilities": ["Alibaba Cloud", "ECS", "remote sessions", "SSH", "cloud operations"],
+    "installers": [
+      {
+        "id": "official-script-unix",
+        "manager": "manual",
+        "platforms": ["darwin", "linux"],
+        "url": "https://workbench-cli.oss-cn-hangzhou.aliyuncs.com/install.sh",
+        "instructions": {
+          "en": "Review the official script, then run: curl -fsSL https://workbench-cli.oss-cn-hangzhou.aliyuncs.com/install.sh | bash",
+          "zh": "请先审阅官方脚本，再执行：curl -fsSL https://workbench-cli.oss-cn-hangzhou.aliyuncs.com/install.sh | bash"
+        }
+      },
+      {
+        "id": "official-script-windows",
+        "manager": "manual",
+        "platforms": ["win32"],
+        "url": "https://workbench-cli.oss-cn-hangzhou.aliyuncs.com/install.ps1",
+        "instructions": {
+          "en": "Review the official PowerShell script, then run: irm https://workbench-cli.oss-cn-hangzhou.aliyuncs.com/install.ps1 | iex",
+          "zh": "请先审阅官方 PowerShell 脚本，再执行：irm https://workbench-cli.oss-cn-hangzhou.aliyuncs.com/install.ps1 | iex"
+        }
+      }
+    ]
+  },
+  {
     "id": "gh",
     "name": "GitHub CLI",
     "command": "gh",

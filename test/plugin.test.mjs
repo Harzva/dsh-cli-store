@@ -18,7 +18,7 @@ test('DSH apply registers the catalog, doctor, and installer tools', async () =>
   assert.equal(searchResult.data[0].id, 'jq')
   assert.match(searchResult.markdown, /jq/i)
   const listResult = await tools[1].execute()
-  assert.equal(listResult.data.length, 4)
+  assert.equal(listResult.data.length, 5)
 })
 
 test('DSH apply fails clearly when the tools service is missing', () => {

@@ -20,6 +20,22 @@ test('install requires confirmation and defaults to dry-run', async () => {
   assert.equal(dryRun.executed, false)
 })
 
+test('manual official installers return instructions without executing a script', async () => {
+  const plan = buildInstallPlan(await getEntry('workbench'), { platform: 'darwin' })
+  assert.equal(plan.manager, 'manual')
+  assert.equal(plan.command, null)
+  assert.match(plan.documentation, /aliyun\.com|aliyuncs\.com/)
+
+  const result = await installCli('workbench', {
+    platform: 'darwin',
+    confirm: true,
+    dryRun: false,
+    runner: async () => { throw new Error('manual install must not execute') },
+  })
+  assert.equal(result.status, 'manual-install-required')
+  assert.equal(result.executed, false)
+})
+
 test('confirmed install delegates only the manifest command', async () => {
   const calls = []
   const result = await installCli('gh', {

@@ -7,7 +7,7 @@ It is intentionally not another DSH plugin marketplace. A DSH marketplace instal
 ## Install into DSH
 
 ```bash
-dsh plugin --profile web add https://github.com/Harzva/dsh-cli-store/releases/latest/download/dsh-cli-store-0.2.0.tgz
+dsh plugin --profile web add https://github.com/Harzva/dsh-cli-store/releases/latest/download/dsh-cli-store-0.2.1.tgz
 ```
 
 The plugin registers seven tools:
@@ -23,7 +23,7 @@ The plugin registers seven tools:
 The package also exposes a local CLI:
 
 ```bash
-dsh-cli-store search github
+dsh-cli-store search workbench
 dsh-cli-store list --json
 dsh-cli-store discover "image cli" --source github --limit 10 --save
 dsh-cli-store saved image --json
@@ -31,9 +31,10 @@ dsh-cli-store install-discovered homebrew:ffmpeg --confirm --no-dry-run
 dsh-cli-store doctor gh
 dsh-cli-store plan install gh
 dsh-cli-store install gh --confirm --no-dry-run
+dsh-cli-store plan install workbench
 ```
 
-The CLI accepts multi-word search queries and `--json` output for automation. A confirmed installation is followed by a version check; a package-manager success with no responding CLI is reported as `installed-unverified`.
+The CLI accepts multi-word search queries and `--json` output for automation. A confirmed package-manager installation is followed by a version check; a package-manager success with no responding CLI is reported as `installed-unverified`. Manual official installers return instructions and leave execution to the user.
 
 ## Internet discovery
 
@@ -50,7 +51,7 @@ The CLI accepts multi-word search queries and `--json` output for automation. A 
 
 - Registry entries and installer arguments are reviewed data, not shell snippets.
 - Child processes use `shell: false`; arbitrary shell strings are never evaluated.
-- Installers are restricted to the package-manager commands allowlisted by the code.
+- Executable installers are restricted to the package-manager commands allowlisted by the code; manual official installers are documentation-only.
 - Registry validation also restricts each manager to its install action (`brew install`, `winget install`, `cargo install`, `npm install`, or `pnpm add`).
 - The DSH tool defaults to a dry-run and requires `confirm=true` plus `dryRun=false` for a write.
 - Doctor only calls the declared CLI with its declared version arguments.
@@ -58,7 +59,7 @@ The CLI accepts multi-word search queries and `--json` output for automation. A 
 - Network discovery is read-only unless `save=true` / `--save` is explicitly requested.
 - Discovery responses are treated as untrusted metadata and are rendered as data, not instructions.
 
-The initial registry supports Homebrew on macOS/Linux and winget on Windows. New entries should include a verified homepage, license, platform list, capabilities, and a concrete installer. Feishu integrations should be added only after the exact CLI or bridge contract is verified; a Node long-connection bridge is not silently presented as an official Feishu CLI.
+The initial registry supports Homebrew on macOS/Linux and winget on Windows. Workbench CLI is included as an official manual installer because its upstream distribution is an OSS-hosted script/archive rather than a package-manager formula; the store displays the official instructions but never auto-executes a remote script. New entries should include a verified homepage, license, platform list, capabilities, and either a constrained package-manager installer or a documented manual installer. Feishu integrations should be added only after the exact CLI or bridge contract is verified; a Node long-connection bridge is not silently presented as an official Feishu CLI.
 
 ## Development
 
