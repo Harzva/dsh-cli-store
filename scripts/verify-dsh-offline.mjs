@@ -1,10 +1,15 @@
-import { mkdtemp, readdir, rm } from 'node:fs/promises'
+import { mkdir, mkdtemp, readdir, rm, unlink } from 'node:fs/promises'
 import { tmpdir } from 'node:os'
+import { fileURLToPath } from 'node:url'
 import { join, resolve } from 'node:path'
 import { spawnSync } from 'node:child_process'
 
-const root = resolve(new URL('..', import.meta.url).pathname)
+const root = fileURLToPath(new URL('..', import.meta.url))
 const artifacts = resolve(root, 'artifacts')
+await mkdir(artifacts, { recursive: true })
+for (const name of await readdir(artifacts)) {
+  if (name.endsWith('.tgz')) await unlink(resolve(artifacts, name))
+}
 const pack = spawnSync('pnpm', ['pack', '--pack-destination', artifacts], {
   cwd: root,
   encoding: 'utf8',

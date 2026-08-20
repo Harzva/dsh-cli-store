@@ -1,8 +1,9 @@
 import { readdir, mkdir, unlink } from 'node:fs/promises'
+import { fileURLToPath } from 'node:url'
 import { resolve } from 'node:path'
 import { spawnSync } from 'node:child_process'
 
-const root = resolve(new URL('..', import.meta.url).pathname)
+const root = fileURLToPath(new URL('..', import.meta.url))
 const artifacts = resolve(root, 'artifacts')
 await mkdir(artifacts, { recursive: true })
 for (const name of await readdir(artifacts)) {
