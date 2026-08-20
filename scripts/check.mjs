@@ -15,6 +15,8 @@ const checkFiles = [
   'bin/dsh-cli-store.mjs',
   'lib/format.js',
   'lib/index.js',
+  'lib/discovery.js',
+  'lib/discovery-store.js',
   'lib/installer.js',
   'lib/registry.js',
   'lib/runner.js',

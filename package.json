@@ -1,6 +1,6 @@
 {
   "name": "dsh-cli-store",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "A security-conscious registry and installer for external CLI tools exposed through DeepSeek Harness.",
   "license": "MIT",
   "type": "module",
@@ -12,6 +12,8 @@
     ".": "./lib/index.js",
     "./installer": "./lib/installer.js",
     "./registry": "./lib/registry.js",
+    "./discovery": "./lib/discovery.js",
+    "./discovery-store": "./lib/discovery-store.js",
     "./package.json": "./package.json",
     "./cordis.patch.yml": "./cordis.patch.yml",
     "./registry.json": "./data/registry.json"
