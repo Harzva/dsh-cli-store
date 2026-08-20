@@ -8,6 +8,9 @@ test('DSH apply registers the catalog, doctor, and installer tools', async () =>
   assert.deepEqual(tools.map((tool) => tool.name), [
     'dsh_cli_search',
     'dsh_cli_list',
+    'dsh_cli_discover',
+    'dsh_cli_saved',
+    'dsh_cli_install_discovered',
     'dsh_cli_doctor',
     'dsh_cli_install',
   ])
