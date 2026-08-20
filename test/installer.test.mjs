@@ -32,7 +32,11 @@ test('confirmed install delegates only the manifest command', async () => {
     },
   })
   assert.equal(result.status, 'installed')
-  assert.deepEqual(calls, [{ command: 'brew', args: ['install', 'gh'] }])
+  assert.equal(result.verification.status, 'installed')
+  assert.deepEqual(calls, [
+    { command: 'brew', args: ['install', 'gh'] },
+    { command: 'gh', args: ['--version'] },
+  ])
 })
 
 test('doctor reports an installed CLI without invoking a shell', async () => {

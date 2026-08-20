@@ -1,6 +1,6 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
-import { getEntry, loadRegistry, searchRegistry } from '../lib/registry.js'
+import { getEntry, loadRegistry, searchRegistry, validateEntry } from '../lib/registry.js'
 
 test('registry has unique entries with platform installers', async () => {
   const entries = await loadRegistry()
@@ -22,4 +22,25 @@ test('search matches capabilities and filters unsupported platforms', async () =
 
 test('unknown CLI produces a useful error', async () => {
   await assert.rejects(() => getEntry('does-not-exist'), /unknown CLI/)
+})
+
+test('registry validation rejects unsafe or incomplete installer metadata', () => {
+  const entry = {
+    id: 'bad-entry',
+    name: 'Bad entry',
+    command: 'bad',
+    versionArgs: ['--version'],
+    description: { en: 'Bad.', zh: '错误。' },
+    homepage: 'https://example.com',
+    license: 'MIT',
+    platforms: ['darwin'],
+    installers: [{
+      id: 'bad',
+      manager: 'brew',
+      platforms: ['darwin'],
+      command: 'brew',
+      args: ['run', 'bad'],
+    }],
+  }
+  assert.throws(() => validateEntry(entry), /installer action is not allowlisted|must be allowlisted/)
 })
