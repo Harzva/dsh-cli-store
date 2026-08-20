@@ -1,0 +1,6 @@
+# dsh-cli-store bundle patch: registers a catalog, doctor, and guarded installer
+# for external command-line tools. The package never evaluates shell strings;
+# installer commands come from the checked-in registry and run with shell=false.
+- insert:
+    - id: dsh-cli-store
+      name: 'dsh-cli-store'

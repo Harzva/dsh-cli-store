@@ -1,0 +1,58 @@
+{
+  "name": "dsh-cli-store",
+  "version": "0.1.0",
+  "description": "A security-conscious registry and installer for external CLI tools exposed through DeepSeek Harness.",
+  "license": "MIT",
+  "type": "module",
+  "main": "lib/index.js",
+  "bin": {
+    "dsh-cli-store": "bin/dsh-cli-store.mjs"
+  },
+  "exports": {
+    ".": "./lib/index.js",
+    "./installer": "./lib/installer.js",
+    "./registry": "./lib/registry.js",
+    "./package.json": "./package.json",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./registry.json": "./data/registry.json"
+  },
+  "files": [
+    "bin",
+    "data",
+    "lib",
+    "scripts",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "check": "node scripts/check.mjs",
+    "pack:dsh": "node scripts/pack-dsh.mjs",
+    "verify:dsh-offline": "node scripts/verify-dsh-offline.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "cli",
+    "cli-manager",
+    "developer-tools",
+    "market"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Harzva/dsh-cli-store.git"
+  },
+  "homepage": "https://github.com/Harzva/dsh-cli-store",
+  "bugs": {
+    "url": "https://github.com/Harzva/dsh-cli-store/issues"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
