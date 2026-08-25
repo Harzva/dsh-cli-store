@@ -2577,5 +2577,52 @@
         "homepage": "https://formulae.brew.sh/formula/pipx"
       }
     ]
+  },
+  {
+    "id": "lark-cli",
+    "name": "Lark CLI (Feishu)",
+    "command": "lark-cli",
+    "versionArgs": [
+      "--version"
+    ],
+    "description": {
+      "en": "Official Feishu/Lark CLI from larksuite for messages, docs, sheets, calendars, tasks, approval, and other OpenAPI workflows.",
+      "zh": "飞书官方命令行工具（npm @larksuite/cli），用于消息、文档、表格、日历、任务、审批等 OpenAPI 工作流。"
+    },
+    "homepage": "https://github.com/larksuite/cli",
+    "license": "MIT",
+    "platforms": [
+      "darwin",
+      "linux",
+      "win32"
+    ],
+    "capabilities": [
+      "Feishu",
+      "Lark",
+      "messages",
+      "docs",
+      "sheets",
+      "calendar",
+      "tasks",
+      "approval",
+      "OpenAPI"
+    ],
+    "installers": [
+      {
+        "id": "npm-global",
+        "manager": "npm",
+        "platforms": [
+          "darwin",
+          "linux",
+          "win32"
+        ],
+        "command": "npm",
+        "args": [
+          "install",
+          "-g",
+          "@larksuite/cli"
+        ]
+      }
+    ]
   }
 ]
