@@ -746,7 +746,7 @@
     "name": "dasel",
     "command": "dasel",
     "versionArgs": [
-      "--version"
+      "version"
     ],
     "description": {
       "en": "JSON, YAML, TOML, XML, and CSV query and modification tool",
