@@ -1,6 +1,6 @@
 {
   "name": "dsh-cli-store",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "A security-conscious registry and installer for external CLI tools exposed through DeepSeek Harness.",
   "license": "MIT",
   "type": "module",
